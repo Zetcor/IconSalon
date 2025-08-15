@@ -104,25 +104,61 @@ body {
 	transform: scale(1.1);
 }
 
-.promo-section {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
-	justify-content: center;
+/* HERO SECTIONS */
+.hero-section {
+	position: relative;
+	background: url('https://static.wixstatic.com/media/9d320c_288964182b604b82a55000c789ac5c9c~mv2.jpg/v1/fill/w_933,h_645,al_c,q_85,enc_avif,quality_auto/9d320c_288964182b604b82a55000c789ac5c9c~mv2.jpg')
+		center/cover no-repeat;
+	height: 90vh;
 }
 
-.price-card {
+.hero-section::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.hero-section > * {
+	position: relative;
+	z-index: 2;
+}
+
+.hero-btn {
+	background-color: var(--pink);
+	color: var(--light);
+	padding: 12px 24px;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+.hero-btn:hover {
+	background-color: var(--beige);
+	color: var(--brown);
+}
+
+.hero-promo-section {
+	background-color: var(--beige);
+}
+
+.hero-about-section {
+	background-color: var(--beige);
+}
+
+/* BRANCH CARDS */
+.branch-card {
 	background-color: var(--light);
+	padding: 1rem;
 	border-radius: 12px;
-	flex: 1 1 calc(33.333% - 20px); /* 3 per row */
-	max-width: calc(33.333% - 20px);
-	transition: transform 0.3s ease;
-	min-height: 530px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	transition: transform 0.3s ease;
 }
 
-.price-card img {
+.branch-card img {
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
@@ -130,7 +166,7 @@ body {
 }
 
 @media (max-width: 992px) {
-	.price-card {
+	.branch-card {
 		flex: 1 1 calc(50% - 20px); /* 2 per row on tablets */
 		max-width: calc(50% - 20px);
 	}
@@ -143,16 +179,15 @@ body {
 	}
 }
 
-
-.price-card:hover {
+.branch-card:hover {
 	transform: scale(1.02);
 }
 
 .select-button {
 	background-color: var(--brown);
 	color: var(--light);
+	padding: 0.5rem 1rem;
 	border-radius: 8px;
-	font-weight: bold;
 }
 
 .select-button:hover {
@@ -160,7 +195,7 @@ body {
 	color: var(--brown);
 }
 
-.price-heading {
+.branch-heading {
 	color: var(--brown);
 	font-size: 4rem;
 	letter-spacing: 3px;
@@ -169,17 +204,16 @@ body {
 	padding-bottom: 3px;
 }
 
-.price {
+.branch {
 	font-size: 72px;
 }
 
 .package-bgcolor {
 	background-color: var(--brown);
 	color: var(--light);
+	padding: 0.25rem 0.5rem;
+	border-radius: 5px;
 	display: inline-block;
-	padding: 2px 8px;
-	border-radius: 4px;
-	margin-bottom: 10px;
 }
 
 /* IMAGE STYLES */
@@ -195,4 +229,12 @@ body {
 	height: 400px;
 	object-fit: cover;
 	border-radius: 8px;
+}
+
+/* PROMO SECTION */
+.promo-section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
 }
