@@ -230,14 +230,14 @@ body {
 
 @media (max-width: 992px) {
 	.promo-card {
-		flex: 1 1 calc(50% - 20px); /* 2 per row on tablets */
+		flex: 1 1 calc(50% - 20px);
 		max-width: calc(50% - 20px);
 	}
 }
 
 @media (max-width: 576px) {
 	.promo-card {
-		flex: 1 1 100%; /* 1 per row on small screens */
+		flex: 1 1 100%;
 		max-width: 100%;
 	}
 }
@@ -268,12 +268,4 @@ body {
 	height: 400px;
 	object-fit: cover;
 	border-radius: 8px;
-}
-
-/* PROMO SECTION */
-.promo-section {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
-	justify-content: center;
 }
