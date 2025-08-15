@@ -104,12 +104,22 @@ body {
 	transform: scale(1.1);
 }
 
+.promo-section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
 .price-card {
 	background-color: var(--light);
 	border-radius: 12px;
-	width: 600px;
+	flex: 1 1 calc(33.333% - 20px); /* 3 per row */
+	max-width: calc(33.333% - 20px);
 	transition: transform 0.3s ease;
 	min-height: 530px;
+	display: flex;
+	flex-direction: column;
 }
 
 .price-card img {
@@ -118,6 +128,21 @@ body {
 	object-fit: cover;
 	border-radius: 8px;
 }
+
+@media (max-width: 992px) {
+	.price-card {
+		flex: 1 1 calc(50% - 20px); /* 2 per row on tablets */
+		max-width: calc(50% - 20px);
+	}
+}
+
+@media (max-width: 576px) {
+	.price-card {
+		flex: 1 1 100%; /* 1 per row on small screens */
+		max-width: 100%;
+	}
+}
+
 
 .price-card:hover {
 	transform: scale(1.02);
