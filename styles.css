@@ -64,6 +64,10 @@
 	margin-bottom: 10px;
 }
 
+.active-border-bottom {
+	border-bottom: 3px solid var(--pink);
+}
+
 /* NAVBAR */
 .salon-nav {
 	background-color: var(--brown);
