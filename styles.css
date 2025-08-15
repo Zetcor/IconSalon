@@ -165,20 +165,6 @@ body {
 	border-radius: 8px;
 }
 
-@media (max-width: 992px) {
-	.branch-card {
-		flex: 1 1 calc(50% - 20px); /* 2 per row on tablets */
-		max-width: calc(50% - 20px);
-	}
-}
-
-@media (max-width: 576px) {
-	.price-card {
-		flex: 1 1 100%; /* 1 per row on small screens */
-		max-width: 100%;
-	}
-}
-
 .branch-card:hover {
 	transform: scale(1.02);
 }
@@ -214,6 +200,59 @@ body {
 	padding: 0.25rem 0.5rem;
 	border-radius: 5px;
 	display: inline-block;
+}
+
+/* PROMO CARDS */
+.promo-section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.promo-card {
+	background-color: var(--light);
+	border-radius: 12px;
+	flex: 1 1 calc(33.333% - 20px);
+	max-width: calc(33.333% - 20px);
+	transition: transform 0.3s ease;
+	min-height: 530px;
+	display: flex;
+	flex-direction: column;
+}
+
+.promo-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+	.promo-card {
+		flex: 1 1 calc(50% - 20px); /* 2 per row on tablets */
+		max-width: calc(50% - 20px);
+	}
+}
+
+@media (max-width: 576px) {
+	.promo-card {
+		flex: 1 1 100%; /* 1 per row on small screens */
+		max-width: 100%;
+	}
+}
+
+.promo-card:hover {
+	transform: scale(1.02);
+}
+
+.promo-heading {
+	color: var(--brown);
+	font-size: 4rem;
+	letter-spacing: 3px;
+	border-bottom: 4px solid var(--pink);
+	width: fit-content;
+	padding-bottom: 3px;
 }
 
 /* IMAGE STYLES */
