@@ -382,6 +382,12 @@ body {
 	padding: 20px;
 }
 
+.story-overlay img {
+	height: 250px;
+	width: 250px;
+	object-fit: cover;
+}
+
 .story-hover:hover .story-overlay {
 	opacity: 1;
 }
