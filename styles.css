@@ -322,7 +322,7 @@ body {
 /* ABOUT US */
 .about-section {
 	position: relative;
-	background: url('https://png.pngtree.com/background/20230612/original/pngtree-girl-getting-her-hair-done-in-a-salon-picture-image_3184932.jpg')
+	background: url('https://raw.githubusercontent.com/Zetcor/IconSalon/main/aboutcover.jpg')
 		center/cover no-repeat;
 	height: 60vh;
 }
