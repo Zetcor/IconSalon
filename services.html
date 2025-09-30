@@ -1,610 +1,996 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-		/>
-		<script
-			src="https://kit.fontawesome.com/203f7bcb2a.js"
-			crossorigin="anonymous"
-		></script>
-		<link href="https://fonts.cdnfonts.com/css/catchy-mager" rel="stylesheet" />
-		<link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="icon" type="image/png" href="The Icon.png" />
-		<title>The Icon Salon | Promos</title>
-	</head>
-	<body id="top">
-		<!-- NAVBAR -->
-		<nav class="navbar navbar-expand-lg salon-nav px-5 py-3 subheader-font">
-			<div class="container-fluid">
-				<!-- Logo on the left -->
-				<a class="navbar-brand text-white" href="index.html">
-					<img
-						src="https://raw.githubusercontent.com/Zetcor/IconSalon/main/logo.png"
-						width="202px"
-						height="60px"
-						alt="Hair Salon Logo"
-					/>
-				</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/203f7bcb2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .services-scroll {
+        max-height: 350px; /* adjust so ~7 inputs fit */
+        overflow-y: auto; /* enables scroll automatically */
+        padding-right: 5px; /* avoid scrollbar overlap */
+      }
+    </style>
+    <link href="https://fonts.cdnfonts.com/css/catchy-mager" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="The Icon.png" />
+    <title>The Icon Salon | Promos</title>
+  </head>
+  <body id="top">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg salon-nav px-5 py-3 subheader-font">
+      <div class="container-fluid">
+        <!-- Logo on the left -->
+        <a class="navbar-brand text-white" href="index.html">
+          <img
+            src="https://raw.githubusercontent.com/Zetcor/IconSalon/main/logo.png"
+            width="202px"
+            height="60px"
+            alt="Hair Salon Logo"
+          />
+        </a>
 
-				<!-- Mobile toggle button -->
-				<button
-					class="navbar-toggler text-white border-0"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<i class="fas fa-bars text-white fs-2"></i>
-				</button>
+        <!-- Mobile toggle button -->
+        <button
+          class="navbar-toggler text-white border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars text-white fs-2"></i>
+        </button>
 
-				<!-- Navbar links on the right -->
-				<div
-					class="collapse navbar-collapse justify-content-end"
-					id="navbarNav"
-				>
-					<ul class="navbar-nav gap-3">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active-border-bottom" href="services.html">Services</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="promos.html"
-								>Promos</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="branches.html">Branches</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about.html">About Us</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+        <!-- Navbar links on the right -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active-border-bottom" href="services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="promos.html">Promos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="branches.html">Branches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-		<h1 class="mx-auto text-center mt-5 promo-heading header-font">SERVICES</h1>
+    <h1 class="mx-auto text-center mt-5 promo-heading header-font">SERVICES</h1>
 
-		<!-- HAIRCUTS -->
-		<section class="container my-5" id="haircuts">
-			<h2 class="text-start header-font mb-4 fw-bold">Haircuts</h2>
-			<div class="promo-section">
-				<!-- Card 1 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱600</h6>
-                    </div>
+    <!-- HAIRCUTS -->
+    <section class="container my-5" id="haircuts">
+      <h2 class="text-start header-font mb-4 fw-bold">Haircuts</h2>
+      <div class="promo-section">
+        <!-- Card 1 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱600</h6>
+          </div>
 
-                    <img
-                        src="https://i.pinimg.com/originals/b9/b4/72/b9b47201a42b156cecc3dd856e8e7a0d.png"
-                        alt="Classic Haircut"
-                    />
-                    <h4 class="mt-3">Classic Haircut</h4>
-                    <p>
-                        A simple, clean, and stylish haircut for everyday looks.
-                    </p>
-                    <button class="btn select-button mt-auto" name="haircut" onclick="addServiceToForm('Haircut', '600')">Book Now</button>
-                </div>
+          <img
+            src="https://i.pinimg.com/originals/b9/b4/72/b9b47201a42b156cecc3dd856e8e7a0d.png"
+            alt="Classic Haircut"
+          />
+          <h4 class="mt-3">Classic Haircut</h4>
+          <p>A simple, clean, and stylish haircut for everyday looks.</p>
+          <button
+            class="btn select-button mt-auto"
+            name="haircut"
+            onclick="addServiceToForm('Haircut', '600')"
+          >
+            Book Now
+          </button>
+        </div>
 
-                <!-- Card 2 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱500</h6>
-                    </div>
+        <!-- Card 2 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱500</h6>
+          </div>
 
-                    <img
-                        src="https://i.pinimg.com/736x/3d/95/2b/3d952bbe7deb6267c9fc6677119f5a4e.jpg"
-                        alt="Restyle & Treatment"
-                    />
-                    <h4 class="mt-3">Styling</h4>
-                    <p>
-                        Change up your style and give your hair a boost.
-                    </p>
-                    <button class="btn select-button mt-auto" name="styling" onclick="addServiceToForm('Styling', '500')">Book Now</button>
-                </div>
+          <img
+            src="https://i.pinimg.com/736x/3d/95/2b/3d952bbe7deb6267c9fc6677119f5a4e.jpg"
+            alt="Restyle & Treatment"
+          />
+          <h4 class="mt-3">Styling</h4>
+          <p>Change up your style and give your hair a boost.</p>
+          <button
+            class="btn select-button mt-auto"
+            name="styling"
+            onclick="addServiceToForm('Styling', '500')"
+          >
+            Book Now
+          </button>
+        </div>
 
-                <!-- Card 3 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱200</h6>
-                    </div>
+        <!-- Card 3 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱200</h6>
+          </div>
 
-                    <img
-                        src="https://i.pinimg.com/736x/98/b4/c7/98b4c7a142f31ece5a0ec61d8d441a2a.jpg"
-                        alt="Special Occasion Styling"
-                    />
-                    <h4 class="mt-3">Haircut (Bangs Part)</h4>
-                    <p>
-                        Elevate your face with a stylish bangs haircut.
-                    </p>
-                    <button class="btn select-button mt-auto" name="bangs">Book Now</button>
-                </div>
-			</div>
-		</section>
+          <img
+            src="https://i.pinimg.com/736x/98/b4/c7/98b4c7a142f31ece5a0ec61d8d441a2a.jpg"
+            alt="Special Occasion Styling"
+          />
+          <h4 class="mt-3">Haircut (Bangs Part)</h4>
+          <p>Elevate your face with a stylish bangs haircut.</p>
+          <button
+            class="btn select-button mt-auto"
+            name="bangs"
+            onclick="addServiceToForm('Haircut (Bangs Part)', '200')"
+          >
+            Book Now
+          </button>
+        </div>
+      </div>
+    </section>
 
-        <!-- COLOR -->
-        <section class="container my-5" id="hair-color">
-            <h2 class="text-start header-font mb-4 fw-bold">Hair Color</h2>
-            <div class="promo-section">
-                <!-- Card 1 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱2,500</h6>
-                    </div>
+    <!-- COLOR -->
+    <section class="container my-5" id="hair-color">
+      <h2 class="text-start header-font mb-4 fw-bold">Hair Color</h2>
+      <div class="promo-section">
+        <!-- Card 1 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱2,500</h6>
+          </div>
 
-                    <img
-                        src="https://i.pinimg.com/736x/fe/14/37/fe1437c233a066b081f7e45fe85519e8.jpg"
-                        alt="Full Hair Color"
-                    />
-                    <h4 class="mt-3">Full Hair Color</h4>
-                    <p>
-                        A complete color transformation using premium dyes for a bold, refreshed appearance.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
+          <img
+            src="https://i.pinimg.com/736x/fe/14/37/fe1437c233a066b081f7e45fe85519e8.jpg"
+            alt="Full Hair Color"
+          />
+          <h4 class="mt-3">Full Hair Color</h4>
+          <p>
+            A complete color transformation using premium dyes for a bold,
+            refreshed appearance.
+          </p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Full Hair Color', '2500')"
+          >
+            Book Now
+          </button>
+        </div>
 
-                <!-- Card 2 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱1,800</h6>
-                    </div>
+        <!-- Card 2 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱1,800</h6>
+          </div>
 
-                    <img
-                        src="https://i.pinimg.com/736x/61/7d/b1/617db1969ca70a5ae2678c00943e33e0.jpg"
-                        alt="Highlights"
-                    />
-                    <h4 class="mt-3">Highlights</h4>
-                    <p>
-                        Adds dimension and brightness with custom-blended tones that enhance natural movement and depth.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
+          <img
+            src="https://i.pinimg.com/736x/61/7d/b1/617db1969ca70a5ae2678c00943e33e0.jpg"
+            alt="Highlights"
+          />
+          <h4 class="mt-3">Highlights</h4>
+          <p>
+            Adds dimension and brightness with custom-blended tones that enhance
+            natural movement and depth.
+          </p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Highlights', '1800')"
+          >
+            Book Now
+          </button>
+        </div>
 
-                <!-- Card 3 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱1,000</h6>
-                    </div>
+        <!-- Card 3 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱1,000</h6>
+          </div>
 
-                    <img
-                        src="https://i.pinimg.com/736x/60/94/e0/6094e0c3278a8262305482dcac28bf4d.jpg"
-                        alt="Root Retouch"
-                    />
-                    <h4 class="mt-3">Root Retouch</h4>
-                    <p>
-                        Covers regrowth and blends roots with existing color for a seamless, polished result.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
+          <img
+            src="https://i.pinimg.com/736x/60/94/e0/6094e0c3278a8262305482dcac28bf4d.jpg"
+            alt="Root Retouch"
+          />
+          <h4 class="mt-3">Root Retouch</h4>
+          <p>
+            Covers regrowth and blends roots with existing color for a seamless,
+            polished result.
+          </p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Root Retouch', '1000')"
+          >
+            Book Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TREATMENTS -->
+    <section class="container my-5" id="treatments">
+      <h2 class="text-start header-font mb-4 fw-bold">Treatments</h2>
+      <div class="promo-section">
+        <!-- Card 1 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱1,000</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/0e/a0/cc/0ea0cc58237bf036534eddc43d2c4b76.jpg"
+            alt="Keratin Hair"
+          />
+          <h4 class="mt-3">Kera-Protein Treatment</h4>
+          <p>
+            A deep conditioning treatment that revitalizes and strengthens hair.
+          </p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Kera-Protein Treatment', '1000')"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱2500</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/88/ed/88/88ed88573eda0da7f7d78ed7fd9bf273.jpg"
+            alt="Rescue 911"
+          />
+          <h4 class="mt-3">Rescue 911</h4>
+          <p>Revive your hair with our intensive repair treatment.</p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Rescue 911', '2500')"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱4,500</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/1e/0f/10/1e0f1023ed1c7a85fcb97da47fc0ad39.jpg"
+            alt="Mucosta Protector"
+          />
+          <h4 class="mt-3">Mucosta Protector</h4>
+          <p>Protect and nourish your hair with our Mucosta treatment.</p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Mucosta Protector', '4500')"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱6,500</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/b4/c0/f7/b4c0f752be127a777ef9b732c8615bef.jpg"
+            alt="Mucota Clinic"
+          />
+          <h4 class="mt-3">Mucota Clinic</h4>
+          <p>
+            Designed to repair, smooth, and nourish hair using advanced,
+            lightweight formulations
+          </p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Mucota Clinic', '6500')"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱6,500</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/79/e0/ab/79e0abf820898927dfe20869d5affa00.jpg"
+            alt="Cashmere Natural Clinic"
+          />
+          <h4 class="mt-3">Cashmere Natural Clinic</h4>
+          <p>
+            Promote hair health and vitality with our Cashmere Natural Clinic
+            treatment.
+          </p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Cashmere Natural Clinic', '6500')"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱7,000</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/02/ae/4f/02ae4fd857cfeaf2bc45b89774c5465d.jpg"
+            alt="Mucota Frizz Control"
+          />
+          <h4 class="mt-3">Mucota Frizz Control</h4>
+          <p>Protect and nourish your hair with our Mucota treatment.</p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Mucota Frizz Control', '7000')"
+          >
+            Book Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERM SERVICES -->
+    <section class="container my-5">
+      <h2 class="text-start header-font mb-4 fw-bold">Perm Services</h2>
+      <div class="promo-section">
+        <!-- Card 1 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱1,000</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/3a/7c/ea/3a7cea4bd8223e3e05ba8a3ef81af3f8.jpg"
+            alt="Basic Cold Perm"
+          />
+          <h4 class="mt-3">Basic Cold Perm</h4>
+          <p>
+            A budget-friendly perm service for creating soft, natural-looking
+            waves.
+          </p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Basic Cold Perm', '1000')"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱2,500</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/b4/74/9f/b4749f830f26a8bf250cd8c79afce336.jpg"
+            alt="Digital Perm"
+          />
+          <h4 class="mt-3">Digital Perm</h4>
+          <p>Perfect for long-lasting curls with added bounce and texture.</p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Digital Perm', '2500')"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱4,500</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/fd/dd/73/fddd739b10fffd0fdc89ee1b4f2226b5.jpg"
+            alt="Korean Wave Perm"
+          />
+          <h4 class="mt-3">Korean Wave Perm</h4>
+          <p>
+            Get trendy loose waves inspired by Korean hairstyles for a chic
+            look.
+          </p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Korean Wave Perm', '4500')"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱6,500</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/40/3c/48/403c48166af4ccc23c592c36cdbf57db.jpg"
+            alt="Volume Rebond with Perm"
+          />
+          <h4 class="mt-3">Volume Rebond with Perm</h4>
+          <p>
+            Combine silky straight rebonding with natural curls for a stylish
+            finish.
+          </p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Volume Rebond with Perm', '6500')"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱6,500</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/6e/0c/fc/6e0cfc4133e9fd53d6c4c6ed5b0063e9.jpg"
+            alt="Japanese Natural Perm"
+          />
+          <h4 class="mt-3">Japanese Natural Perm</h4>
+          <p>
+            Soft and subtle curls for a natural, everyday look that’s easy to
+            manage.
+          </p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Japanese Natural Perm', '6500')"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card p-3 border border-1 border-dark">
+          <div class="text-start mb-3">
+            <h6 class="package-bgcolor">₱7,000</h6>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/6d/91/20/6d91207b0fc0217cb497acc48ddacb67.jpg"
+            alt="Premium Glam Perm"
+          />
+          <h4 class="mt-3">Premium Glam Perm</h4>
+          <p>
+            High-end perm service for voluminous, glamorous curls that last
+            longer.
+          </p>
+          <button
+            class="btn select-button mt-auto"
+            onclick="addServiceToForm('Premium Glam Perm', '7000')"
+          >
+            Book Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSACTION FORM -->
+    <section class="container my-5" id="transaction-form">
+      <h2 class="text-start header-font mb-4 fw-bold">Book Your Appointment</h2>
+      <form id="bookingForm">
+        <div class="row">
+          <!-- LEFT SIDE: INPUTS -->
+          <div class="col-lg-7">
+            <div class="row">
+              <!-- Client Name -->
+              <div class="col-md-6 mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <!-- Client Address -->
+              <div class="col-md-6 mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" required />
+              </div>
             </div>
-        </section>
-
-        <!-- TREATMENTS -->
-		<section class="container my-5" id="treatments">
-			<h2 class="text-start header-font mb-4 fw-bold">Treatments</h2>
-			<div class="promo-section">
-				<!-- Card 1 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱1,000</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/0e/a0/cc/0ea0cc58237bf036534eddc43d2c4b76.jpg"
-                        alt="Keratin Hair"
-                    />
-                    <h4 class="mt-3">Kera-Protein Treatment</h4>
-                    <p>
-                        A deep conditioning treatment that revitalizes and strengthens hair.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱2500</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/88/ed/88/88ed88573eda0da7f7d78ed7fd9bf273.jpg"
-                        alt="Rescue 911"
-                    />
-                    <h4 class="mt-3">Rescue 911</h4>
-                    <p>
-                        Revive your hair with our intensive repair treatment.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱4,500</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/1e/0f/10/1e0f1023ed1c7a85fcb97da47fc0ad39.jpg"
-                        alt="Mucosta Protector"
-                    />
-                    <h4 class="mt-3">Mucosta Protector</h4>
-                    <p>
-                        Protect and nourish your hair with our Mucosta treatment.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱6,500</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/b4/c0/f7/b4c0f752be127a777ef9b732c8615bef.jpg"
-                        alt="Mucota Clinic"
-                    />
-                    <h4 class="mt-3">Mucota Clinic</h4>
-                    <p>
-                        Designed to repair, smooth, and nourish hair using advanced, lightweight formulations
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱6,500</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/79/e0/ab/79e0abf820898927dfe20869d5affa00.jpg"
-                        alt="Cashmere Natural Clinic"
-                    />
-                    <h4 class="mt-3">Cashmere Natural Clinic</h4>
-                    <p>
-                        Promote hair health and vitality with our Cashmere Natural Clinic treatment.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱7,000</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/02/ae/4f/02ae4fd857cfeaf2bc45b89774c5465d.jpg"
-                        alt="Mucota Frizz Control"
-                    />
-                    <h4 class="mt-3">Mucota Frizz Control</h4>
-                    <p>
-                        Protect and nourish your hair with our Mucota treatment.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
-			</div>
-		</section>
-
-        <!-- PERM SERVICES -->
-        <section class="container my-5">
-            <h2 class="text-start header-font mb-4 fw-bold">Perm Services</h2>
-            <div class="promo-section">
-                <!-- Card 1 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱1,000</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/3a/7c/ea/3a7cea4bd8223e3e05ba8a3ef81af3f8.jpg"
-                        alt="Basic Cold Perm"
-                    />
-                    <h4 class="mt-3">Basic Cold Perm</h4>
-                    <p>
-                        A budget-friendly perm service for creating soft, natural-looking waves.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱2,500</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/b4/74/9f/b4749f830f26a8bf250cd8c79afce336.jpg"
-                        alt="Digital Perm"
-                    />
-                    <h4 class="mt-3">Digital Perm</h4>
-                    <p>
-                        Perfect for long-lasting curls with added bounce and texture.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱4,500</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/fd/dd/73/fddd739b10fffd0fdc89ee1b4f2226b5.jpg"
-                        alt="Korean Wave Perm"
-                    />
-                    <h4 class="mt-3">Korean Wave Perm</h4>
-                    <p>
-                        Get trendy loose waves inspired by Korean hairstyles for a chic look.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱6,500</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/40/3c/48/403c48166af4ccc23c592c36cdbf57db.jpg"
-                        alt="Volume Rebond with Perm"
-                    />
-                    <h4 class="mt-3">Volume Rebond with Perm</h4>
-                    <p>
-                        Combine silky straight rebonding with natural curls for a stylish finish.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱6,500</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/6e/0c/fc/6e0cfc4133e9fd53d6c4c6ed5b0063e9.jpg"
-                        alt="Japanese Natural Perm"
-                    />
-                    <h4 class="mt-3">Japanese Natural Perm</h4>
-                    <p>
-                        Soft and subtle curls for a natural, everyday look that’s easy to manage.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="service-card p-3 border border-1 border-dark">
-                    <div class="text-start mb-3">
-                        <h6 class="package-bgcolor">₱7,000</h6>
-                    </div>
-
-                    <img
-                        src="https://i.pinimg.com/736x/6d/91/20/6d91207b0fc0217cb497acc48ddacb67.jpg"
-                        alt="Premium Glam Perm"
-                    />
-                    <h4 class="mt-3">Premium Glam Perm</h4>
-                    <p>
-                        High-end perm service for voluminous, glamorous curls that last longer.
-                    </p>
-                    <button class="btn select-button mt-auto">Book Now</button>
-                </div>
+            <div class="row">
+              <!-- Contact Number -->
+              <div class="col-md-6 mb-3">
+                <label for="contact" class="form-label">Contact Number</label>
+                <input type="tel" class="form-control" id="contact" required />
+              </div>
+              <!-- Email -->
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
             </div>
-        </section>
+            <div class="row">
+              <!-- Payment Method -->
+              <div class="col-md-6 mb-3">
+                <label for="payment-method" class="form-label"
+                  >Payment Method</label
+                >
+                <select class="form-select" id="payment-method" required>
+                  <option value="" disabled selected>
+                    Select Payment Method
+                  </option>
+                  <option value="credit-card">Credit Card</option>
+                  <option value="debit-card">Debit Card</option>
+                  <option value="cash">Cash</option>
+                  <option value="online-payment">Online Payment</option>
+                </select>
+              </div>
+              <!-- Date & Time -->
+              <div class="col-md-6 mb-3">
+                <label for="reservation-datetime" class="form-label"
+                  >Reservation Date & Time</label
+                >
+                <input
+                  type="datetime-local"
+                  class="form-control"
+                  id="reservation-datetime"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <!-- Branch -->
+              <div class="col-md-6 mb-3">
+                <label for="branch" class="form-label">Branch</label>
+                <select class="form-select" id="branch" required>
+                  <option value="" disabled selected>Select Branch</option>
+                  <option value="manila">Manila</option>
+                  <option value="caloocan">Caloocan</option>
+                  <option value="laguna">Laguna</option>
+                </select>
+              </div>
+            </div>
 
-        <!-- TRANSACTION FORM -->
-        <section class="container my-5" id="transaction-form">
-            <h2 class="text-start header-font mb-4 fw-bold">Book Your Appointment</h2>
-            <form>
-                <div class="row">
-                    <!-- Client Name -->
-                    <div class="col-md-6 mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-                    <!-- Client Address -->
-                    <div class="col-md-6 mb-3">
-                        <label for="address" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="address" required>
-                    </div>
+            <!-- Add-ons -->
+            <h4 class="fw-bold mt-4">Add-ons</h4>
+
+            <div class="form-check d-flex align-items-center gap-2 mb-2">
+              <input
+                class="form-check-input addon"
+                type="checkbox"
+                value="1500"
+                id="hair-extension"
+                data-name="Hair Extension"
+              />
+              <label class="form-check-label flex-grow-1" for="hair-extension">
+                Hair Extension - ₱1,500
+              </label>
+              <input
+                type="number"
+                class="form-control addon-qty"
+                id="qty-hair-extension"
+                min="1"
+                value="1"
+                style="width: 80px"
+                disabled
+              />
+            </div>
+
+            <div class="form-check d-flex align-items-center gap-2 mb-2">
+              <input
+                class="form-check-input addon"
+                type="checkbox"
+                value="800"
+                id="scalp-massage"
+                data-name="Scalp Massage"
+              />
+              <label class="form-check-label flex-grow-1" for="scalp-massage">
+                Scalp Massage - ₱800
+              </label>
+              <input
+                type="number"
+                class="form-control addon-qty"
+                id="qty-scalp-massage"
+                min="1"
+                value="1"
+                style="width: 80px"
+                disabled
+              />
+            </div>
+
+            <div class="form-check d-flex align-items-center gap-2 mb-2">
+              <input
+                class="form-check-input addon"
+                type="checkbox"
+                value="1200"
+                id="hot-oil"
+                data-name="Hot Oil Treatment"
+              />
+              <label class="form-check-label flex-grow-1" for="hot-oil">
+                Hot Oil Treatment - ₱1,200
+              </label>
+              <input
+                type="number"
+                class="form-control addon-qty"
+                id="qty-hot-oil"
+                min="1"
+                value="1"
+                style="width: 80px"
+                disabled
+              />
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE: SUMMARY -->
+          <div class="col-lg-5">
+            <div class="p-4 border rounded bg-light">
+              <h3 class="header-font fw-bold mb-3">Summary</h3>
+
+              <!-- Service List -->
+              <div id="services-list" class="mb-3 services-scroll">
+                <!-- dynamically added services will appear here -->
+              </div>
+
+              <!-- Breakdown -->
+              <div id="summary-breakdown" class="mb-3">
+                <div
+                  id="subtotal-row"
+                  style="display: none"
+                  class="d-flex justify-content-between"
+                >
+                  <h5>Subtotal:</h5>
+                  <h5>₱<span id="subtotal-amount">0</span></h5>
                 </div>
-                <div class="row">
-                    <!-- Contact Number -->
-                    <div class="col-md-6 mb-3">
-                        <label for="contact" class="form-label">Contact Number</label>
-                        <input type="tel" class="form-control" id="contact" required>
-                    </div>
-                    <!-- Email -->
-                    <div class="col-md-6 mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
+                <div
+                  id="addons-row"
+                  style="display: none"
+                  class="d-flex justify-content-between"
+                >
+                  <h6>Add-ons:</h6>
+                  <h6>₱<span id="addons-amount">0</span></h6>
                 </div>
-                <div class="row">
-                    <!-- Payment Method -->
-                    <div class="col-md-6 mb-3">
-                        <label for="payment-method" class="form-label">Payment Method</label>
-                        <select class="form-select" id="payment-method" required>
-                            <option value="" disabled selected>Select Payment Method</option>
-                            <option value="credit-card">Credit Card</option>
-                            <option value="debit-card">Debit Card</option>
-                            <option value="cash">Cash</option>
-                            <option value="online-payment">Online Payment</option>
-                        </select>
-                    </div>
-                    <!-- Date & Time of Reservation -->
-                    <div class="col-md-6 mb-3">
-                        <label for="reservation-datetime" class="form-label">Reservation Date & Time</label>
-                        <input type="datetime-local" class="form-control" id="reservation-datetime" required>
-                    </div>
+                <div
+                  id="reservation-row"
+                  style="display: none"
+                  class="d-flex justify-content-between"
+                >
+                  <h6>Reservation Fee:</h6>
+                  <h6>₱<span id="reservation-amount">100</span></h6>
                 </div>
-                <div class="row">
-                    <!-- Branch Selection -->
-                    <div class="col-md-6 mb-3">
-                        <label for="branch" class="form-label">Branch</label>
-                        <select class="form-select" id="branch" required>
-                            <option value="" disabled selected>Select Branch</option>
-                            <option value="manila">Manila</option>
-                            <option value="caloocan">Caloocan</option>
-                            <option value="laguna">Laguna</option>
-                        </select>
-                    </div>
-                    <!-- Number of Pax -->
-                    <div class="col-md-6 mb-3">
-                        <label for="pax" class="form-label">Number of Pax</label>
-                        <input type="number" class="form-control" id="pax" min="1" required>
-                    </div>
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <h4>Total:</h4>
+                  <h4>₱<span id="total-amount">0</span></h4>
                 </div>
+              </div>
 
-                <div>
-                    <h2 class="text-start header-font fw-bold mt-4">Add-ons</h2>
-                    <ul class="list-unstyled subheader-font">
-                        <li>
-                            <label for="hair-extension">
-                                <input type="checkbox" id="hair-extension" name="addons">
-                                Hair Extension - ₱1,500
-                            </label>
-                        </li>
-                        <li>
-                            <label for="scalp-massage">
-                                <input type="checkbox" id="scalp-massage" name="addons">
-                                Scalp Massage - ₱800
-                            </label>
-                        </li>
-                        <li>
-                            <label for="hot-oil-treatment">
-                                <input type="checkbox" id="hot-oil-treatment" name="addons">
-                                Hot Oil Treatment - ₱1,200
-                            </label>
-                        </li>
-                    </ul>
-                </div>
+              <div class="text-center">
+                <button type="button" onclick="submitOrder()" class="btn select-button w-100">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
 
+    <div class="go-top-wrapper">
+      <a href="#top" class="goTopBtn">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
 
-                <!-- Blank Div for Selected Services -->
-                <div id="selected-services" class="container my-5">
-                    <h2 class="text-start header-font mb-4 fw-bold">Services You Availed</h2>
-                    <div id="services-list" class="promo-section">
-                        
-                    </div>
-                </div>
+    <!-- FOOTER -->
+    <footer class="salon-footer text-white pt-5">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo & Tagline -->
+          <div class="col-md-4 text-center text-md-start">
+            <img
+              src="https://raw.githubusercontent.com/Zetcor/IconSalon/main/logo.png"
+              alt="The Icon Salon Logo"
+              width="180"
+              class="mb-3"
+            />
+            <p class="subheader-font">
+              Where beauty meets style. Your trusted salon experience since
+              2025.
+            </p>
+          </div>
 
-                <div id="total-price" class="mb-3">
-                    <h4>Total Price: ₱<span id="price-amount">0</span></h4>
-                </div>
+          <!-- Quick Links -->
+          <div class="col-md-4 text-center">
+            <h5 class="header-font mb-3">Quick Links</h5>
+            <ul class="list-unstyled subheader-font">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li><a href="promos.html" class="footer-link">Promos</a></li>
+              <li>
+                <a href="branches.html" class="footer-link">Branches</a>
+              </li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+            </ul>
+          </div>
 
-                <div class="text-center">
-                    <button type="submit" class="btn select-button">Submit</button>
-                </div>
-            </form>
-        </section>
+          <!-- Contact & Social -->
+          <div class="col-md-4 text-center text-md-end">
+            <h5 class="header-font mb-3">Get in Touch</h5>
+            <p class="subheader-font mb-1">
+              <i class="fas fa-phone-alt me-2"></i> +63 912 345 6789
+            </p>
+            <p class="subheader-font mb-3">
+              <i class="fas fa-envelope me-2"></i> theiconsalon@hairsalon.ph
+            </p>
+            <div class="social-icons">
+              <a href="#" class="footer-social"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="footer-social"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="footer-social"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
 
+        <hr />
+        <p class="text-center mb-0 pb-3 subheader-font small">
+          &copy; 2025 The Icon Salon. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
 
-		<div class="go-top-wrapper">
-			<a href="#top" class="goTopBtn">
-				<i class="fas fa-arrow-up"></i>
-			</a>
-		</div>
+    <script>
+      const RESERVATION_FEE = 100;
+      let selectedServices = [];
 
-		<!-- FOOTER -->
-		<footer class="salon-footer text-white pt-5">
-			<div class="container">
-				<div class="row gy-4">
-					<!-- Logo & Tagline -->
-					<div class="col-md-4 text-center text-md-start">
-						<img
-							src="https://raw.githubusercontent.com/Zetcor/IconSalon/main/logo.png"
-							alt="The Icon Salon Logo"
-							width="180"
-							class="mb-3"
-						/>
-						<p class="subheader-font">
-							Where beauty meets style. Your trusted salon experience since
-							2025.
-						</p>
-					</div>
+      function submitOrder() {
+        const hasServices = selectedServices.length > 0;
 
-					<!-- Quick Links -->
-					<div class="col-md-4 text-center">
-						<h5 class="header-font mb-3">Quick Links</h5>
-						<ul class="list-unstyled subheader-font">
-							<li><a href="index.html" class="footer-link">Home</a></li>
-							<li><a href="services.html" class="footer-link">Services</a></li>
-							<li><a href="promos.html" class="footer-link">Promos</a></li>
-							<li>
-								<a href="branches.html" class="footer-link">Branches</a>
-							</li>
-							<li><a href="about.html" class="footer-link">About Us</a></li>
-						</ul>
-					</div>
+        let hasAddons = false;
+        document.querySelectorAll(".addon:checked").forEach((addon) => {
+          hasAddons = true;
+        });
 
-					<!-- Contact & Social -->
-					<div class="col-md-4 text-center text-md-end">
-						<h5 class="header-font mb-3">Get in Touch</h5>
-						<p class="subheader-font mb-1">
-							<i class="fas fa-phone-alt me-2"></i> +63 912 345 6789
-						</p>
-						<p class="subheader-font mb-3">
-							<i class="fas fa-envelope me-2"></i> theiconsalon@hairsalon.ph
-						</p>
-						<div class="social-icons">
-							<a href="#" class="footer-social"
-								><i class="fab fa-facebook-f"></i
-							></a>
-							<a href="#" class="footer-social"
-								><i class="fab fa-instagram"></i
-							></a>
-							<a href="#" class="footer-social"
-								><i class="fab fa-twitter"></i
-							></a>
-						</div>
-					</div>
-				</div>
+        if (!hasServices && !hasAddons) {
+          alert(
+            "Please select at least one service or add-on before submitting."
+          );
+          return;
+        }
 
-				<hr />
-				<p class="text-center mb-0 pb-3 subheader-font small">
-					&copy; 2025 The Icon Salon. All Rights Reserved.
-				</p>
-			</div>
-		</footer>
+        // ✅ Passed validation
+        alert("Thank you for Booking!");
+      }
 
-        <script>
-            function addServiceToForm(serviceName, servicePrice) {
+      function formatCurrency(num) {
+        return num.toLocaleString("en-PH", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        });
+      }
 
-                let totalPrice = 0;
-                totalPrice += parseInt(servicePrice);
-                const servicesList = document.getElementById('services-list');
+      function addServiceToForm(serviceName, price) {
+        const servicesList = document.getElementById("services-list");
 
-                // Create a new div for the service
-                const serviceDiv = document.createElement('div');
-                serviceDiv.classList.add('service-card', 'p-3', 'border', 'border-1', 'border-dark', 'mb-3');
+        // If service already exists → just increment qty
+        let existing = selectedServices.find((s) => s.name === serviceName);
+        if (existing) {
+          existing.qty += 1;
+          const qtyInput = servicesList.querySelector(
+            `[data-service="${serviceName}"] .service-qty`
+          );
+          qtyInput.value = existing.qty;
+          updateSummary();
+          return;
+        }
 
-                // Add service name and price
-                serviceDiv.innerHTML = `
-                    <h4 class="mt-3">${serviceName}</h4>
-                    <p>Price: ₱${servicePrice}</p>
-                `;
+        const serviceDiv = document.createElement("div");
+        serviceDiv.className =
+          "service-item d-flex justify-content-between align-items-center mb-2";
+        serviceDiv.setAttribute("data-service", serviceName);
 
-                servicesList.appendChild(serviceDiv);
+        serviceDiv.innerHTML = `
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="btn btn-sm btn-danger p-2"
+          onclick="removeService('${serviceName}', this)">
+          <i class="fas fa-times"></i>
+        </button>
+        <span class="service-name">${serviceName}</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <input type="number" class="form-control form-control-sm service-qty" 
+          value="1" min="1" style="width:70px">
+        <span class="service-price">₱${formatCurrency(Number(price))}</span>
+      </div>
+    `;
 
-                let totalprice = document.getElementById('price-amount');
-                totalprice += servicePrice;
-                document.getElementById('price-amount').innerText = totalPrice;
-            }
-        </script>
+        // Attach qty change event → update that service's displayed price
+        const qtyInput = serviceDiv.querySelector(".service-qty");
+        const priceDisplay = serviceDiv.querySelector(".service-price");
+        qtyInput.addEventListener("input", (e) => {
+          let svc = selectedServices.find((s) => s.name === serviceName);
+          svc.qty = parseInt(e.target.value) || 1;
+          priceDisplay.innerText = `₱${formatCurrency(svc.price * svc.qty)}`; // update label
+          updateSummary();
+        });
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-	</body>
+        servicesList.appendChild(serviceDiv);
+
+        selectedServices.push({
+          name: serviceName,
+          price: Number(price),
+          qty: 1,
+        });
+        updateSummary();
+      }
+
+      function removeService(serviceName, btn) {
+        const serviceItem = btn.closest(".service-item");
+        if (serviceItem) serviceItem.remove();
+
+        const idx = selectedServices.findIndex((s) => s.name === serviceName);
+        if (idx !== -1) selectedServices.splice(idx, 1);
+
+        updateSummary();
+      }
+
+      function updateSummary() {
+        const servicesList = document.getElementById("services-list");
+        const headerRow = document.getElementById("services-header"); // header row id
+
+        const subtotalRow = document.getElementById("subtotal-row");
+        const addonsRow = document.getElementById("addons-row");
+        const reservationRow = document.getElementById("reservation-row");
+
+        const subtotalAmount = document.getElementById("subtotal-amount");
+        const addonsAmount = document.getElementById("addons-amount");
+        const reservationAmount = document.getElementById("reservation-amount");
+        const totalAmount = document.getElementById("total-amount");
+
+        // Subtotal from services (qty * price)
+        let subtotal = selectedServices.reduce(
+          (sum, s) => sum + s.price * s.qty,
+          0
+        );
+
+        // Update each service row price (in case updateSummary is called elsewhere)
+        selectedServices.forEach((s) => {
+          const row = servicesList.querySelector(`[data-service="${s.name}"]`);
+          if (row) {
+            const priceDisplay = row.querySelector(".service-price");
+            priceDisplay.innerText = `₱${formatCurrency(s.price * s.qty)}`;
+          }
+        });
+
+        // Remove old addons list
+        document.querySelectorAll("#addons-list")?.forEach((el) => el.remove());
+
+        // Build new addons list
+        const addonsContainer = document.createElement("div");
+        addonsContainer.id = "addons-list";
+        addonsContainer.className = "mt-2";
+
+        let addonsTotal = 0;
+        document.querySelectorAll(".addon:checked").forEach((addon) => {
+          const qtyInput = addon.parentElement.querySelector(".addon-qty");
+          const qty = parseInt(qtyInput.value) || 1;
+          const addonName = addon.dataset.name;
+          const addonPrice = Number(addon.value) * qty;
+          addonsTotal += addonPrice;
+
+          const addonRow = document.createElement("div");
+          addonRow.className = "d-flex justify-content-between";
+          addonRow.innerHTML = `
+        <small>${addonName} (x${qty})</small>
+        <small>₱${formatCurrency(addonPrice)}</small>
+      `;
+          addonsContainer.appendChild(addonRow);
+        });
+
+        if (addonsContainer.children.length > 0) {
+          document
+            .getElementById("summary-breakdown")
+            .insertBefore(addonsContainer, addonsRow.nextSibling);
+        }
+
+        // Show/hide header row only when there are services
+        if (headerRow) {
+          headerRow.style.display =
+            selectedServices.length > 0 ? "flex" : "none";
+        }
+
+        // Show/hide rows
+        subtotalRow.style.display = subtotal > 0 ? "flex" : "none";
+        addonsRow.style.display = addonsTotal > 0 ? "flex" : "none";
+        reservationRow.style.display = subtotal > 0 ? "flex" : "none";
+
+        // Update amounts
+        subtotalAmount.innerText = formatCurrency(subtotal);
+        addonsAmount.innerText = formatCurrency(addonsTotal);
+        reservationAmount.innerText = formatCurrency(RESERVATION_FEE);
+
+        // Discount
+        let discount = 0;
+        if (subtotal >= 5000) {
+          discount = subtotal * 0.1;
+          if (!document.getElementById("discount-row")) {
+            const discountDiv = document.createElement("div");
+            discountDiv.id = "discount-row";
+            discountDiv.className =
+              "d-flex justify-content-between text-success";
+            discountDiv.innerHTML = `
+          <h6>Discount (10%):</h6>
+          <h6>-₱<span id="discount-amount">0.00</span></h6>
+        `;
+            document
+              .getElementById("summary-breakdown")
+              .insertBefore(discountDiv, reservationRow);
+          }
+          document.getElementById("discount-amount").innerText =
+            formatCurrency(discount);
+        } else {
+          const discRow = document.getElementById("discount-row");
+          if (discRow) discRow.remove();
+        }
+
+        const total =
+          subtotal +
+          addonsTotal +
+          (subtotal > 0 ? RESERVATION_FEE : 0) -
+          discount;
+        totalAmount.innerText = formatCurrency(total);
+      }
+
+      // Add-ons event listeners
+      document.querySelectorAll(".addon").forEach((addon) => {
+        addon.addEventListener("change", function () {
+          const qtyInput = this.parentElement.querySelector(".addon-qty");
+          if (this.checked) {
+            qtyInput.disabled = false;
+          } else {
+            qtyInput.disabled = true;
+            qtyInput.value = 1;
+          }
+          updateSummary();
+        });
+      });
+
+      document.querySelectorAll(".addon-qty").forEach((qtyInput) => {
+        qtyInput.addEventListener("input", function () {
+          const checkbox = this.parentElement.querySelector(".addon");
+          if (checkbox.checked) {
+            updateSummary();
+          }
+        });
+      });
+
+      updateSummary();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
